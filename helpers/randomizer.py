@@ -19,7 +19,7 @@ def generate_name():
         random_user_name = f"{first_name} {last_name}"
         return random_user_name
 
-def generate_incorrect_password(length = 10):
+def generate_incorrect_password(length = 3):
         char_pool = string.ascii_lowercase + string.ascii_uppercase + string.digits
         random_incorrect_password = ''.join(random.choice(char_pool) for _ in range(length))
         return random_incorrect_password
